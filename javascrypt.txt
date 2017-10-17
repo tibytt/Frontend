@@ -1,0 +1,82 @@
+javascript:
+funciones utiles:
+strings:
+toUpperCase()// mayuscula
+.trim()//saca los espacios
+
+
+
+Math.random// random enteros
+Math.floor//redondea
+Number.isInteger//dice si es un numero
+`${}` interpolar es6
+
+/////
+variables: 
+const constante no se puede sobreescribir
+let variable normal podes no darle valor
+
+arrays:
+.push('palabra') agrega elementos .pop() saca el ultimo elemento .shift() saca el primero
+.unshift("coso") agrega uno al primero .slice(n,n) corta
+arrays con const no modificar para q quede por ej uno;
+
+
+for each:
+let fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+fruits.forEach(function(eat){
+  console.log("-")+eat;});
+o sino
+fruits.forEach(eat => console.log("-") + eat);
+
+
+map: devuelve otra lista modificando la anterior
+let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+// Create the secretMessage array below
+let secretMessage= animals.map(function(numero) {  
+  return numero[0]; 
+});
+
+
+o como lo otro mas corto 
+
+
+filter() igual pero filtra
+iteradores sobre arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods
+////
+Objeto:
+let person= {
+  name: "Francisco",
+  age: 20, 
+  sayGoodbye(){
+  return "Goodbye!"
+},
+};
+es como una estructura y se accede igual person.name o sino person['name']
+podes meter una funcion dentro
+tambien esta this para acceder
+set
+set age(ageIn) {
+    if (typeof ageIn === 'number') {
+      this._age = ageIn;
+    }
+    else {
+      console.log('Invalid input');
+      return 'Invalid input';
+    }
+
+getters y setters
+
+CLASES:
+
+class Surgeon {
+  constructor(name, department) {
+    this._name = name;
+    this._department = department;
+  }
+}
+// asi creo uno
+const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
