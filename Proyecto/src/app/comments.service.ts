@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map'; //si no importo esto no anda
 
 @Injectable()
 export class CommentsService {
-  endpoint = "https://jsonplaceholder.typicode.com/comments";
+  endpoint = "https://jsonplaceholder.typicode.com/posts";
 
   constructor(private http: Http) { }
 

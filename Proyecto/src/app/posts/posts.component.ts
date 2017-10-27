@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PostService } from '../post.service';
+
 import { ActivatedRoute, Params } from '@angular/router';
+import { PostService } from '../post.service';
 import { CommentsService } from '../comments.service';
 @Component({
   selector: 'app-posts',
